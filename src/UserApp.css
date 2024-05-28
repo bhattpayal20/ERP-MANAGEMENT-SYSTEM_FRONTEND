@@ -1,0 +1,939 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: #eaedf3;
+}
+
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, rgb(26, 29, 29), rgb(88, 68, 173));
+  color: #ffffff;
+}
+
+.sidebar-logo{
+  font-size: 16px;
+  
+}
+
+.sidebar-icon{
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 16px;
+ 
+  
+  cursor: pointer;
+  user-select: none;
+}
+
+.sidebar-header{
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.sidebar-items .item{
+  display: flex;
+  align-items: center;
+  padding: 16px 8px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.sidebar-items .item:hover{
+  background-color: rgba(255 , 255 , 255 , 0.05);
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar.collapsed .sidebar-icon {
+  margin-left: 0;
+
+}
+.sidebar.collapsed .sidebar-header {
+  width: 100px;
+}
+
+.sidebar.collapsed .sidebar-items {
+  width: 100px;
+}
+
+.sidebar.collapsed .sidebar-text , 
+.sidebar.collapsed .sidebar-logo {
+  display:  none;
+}
+
+.AdminLogin-icon{
+  margin: 5px;
+  width: 2.5em;
+  height: 2.5em;
+}
+.AdminLogin-text{
+  margin: 5px;
+}
+
+.welcomeAdmin{
+  color: white;
+  height: 100px;
+  width: auto;
+  margin-top: 30px;
+  background-color: rgb(8, 156, 241); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(12, 129, 224) , rgb(183, 26, 204));
+    border-radius: 20px;
+    margin-left: auto;
+  
+  }
+
+  .divExpand{
+    width: 74%;
+    padding-left: 250px;
+    margin-left: 90px;
+  }
+
+  .mainSection{
+    width: 100%;
+    height: 100%;
+  }
+
+.Major{
+  display: flex;
+  /* justify-content: center; */
+}
+
+.card{
+  width: 250px;
+  height: 150px;
+  background-color: rgb(238, 232, 221);
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  background-color: rgb(235, 12, 197); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(99, 8, 134), rgb(83, 28, 184));
+
+  
+}
+
+.card-title{
+  text-align: center;
+  color: rgb(249, 249, 250);
+}
+
+.num{
+  color: rgb(248, 245, 245);
+  text-align: center;
+}
+
+.flexContainer{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  margin: 30px;
+}
+
+.currentTask{
+  width: 80%;
+  box-shadow : 5px 10px 10px 10px #888888;
+  height: 300px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(34, 19, 245));
+  /* background-color: red; /* For browsers that do not support gradients */
+  /* background-image: linear-gradient(rgb(59, 31, 187), rgb(81, 53, 182));  */
+  border-radius: 30px;
+  /* color: white; */
+}
+.currentTask {
+  text-align: center;
+  padding-top: 10px;
+  margin: 20px;
+  margin-left: 120px;
+}
+
+.Page{
+  width: 100%;
+  height: 100%;
+}
+
+/* .ineptLogo{
+  display: none;
+} */
+
+.responsiveHeader{
+  display: flex;
+  display: none;
+  margin-top: 30px;
+}
+.userDropdown{
+  margin-top: 200px ;
+  margin-left: 60px ;
+}
+.tables{
+  width: 100%;
+}
+
+.date{
+  margin: 10px;
+  margin-left: 5px;
+}
+.dateDiv1{  
+  margin-top: 30px;
+  margin-left: 20px ;
+}
+
+.dateDiv2{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.attendanceModal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color:white;
+  border: '2px solid #000';
+  box-shadow: 24;
+  border-radius: 20px;
+  
+}
+.modalHeading{
+  padding: 20px;
+}
+
+.searchButton{
+  margin-left: 30px;
+}
+.closeButton{
+  margin-left: 250px;
+  
+}
+.mediaUserImage{
+  display: none;
+}
+
+.profileMajorDiv{
+  display: block;
+}
+
+.mediaProfileMajorDiv{
+  display: none;
+}
+
+.editProfileModal{
+
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px ;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 24;
+  
+}
+
+.TaskRefresh{
+  right : 25% ;
+  top : 22% ;
+  position : absolute ;
+   z-index : 100
+
+}
+
+.AttendanceRefresh{
+  right : 25% ;
+  top : 21% ;
+  position : absolute;
+  z-index : 100;
+}
+
+.ApplicationRefresh{
+  right : 25% ;
+  top : 25% ;
+  position : absolute;
+  z-index : 100;
+}
+
+.currentTaskCard{
+  width : 500px ;
+  height : 200px ;
+  margin-left : 250px;
+  border-radius  : 20px;
+  
+}
+
+.viewDetailBtn{
+  margin-left: 190px;
+  color: black;
+}
+
+
+/* .................................... Responsive CSS style ............................................... */
+/* .................................... Responsive CSS style ............................................... */
+/* .................................... Responsive CSS style ............................................... */
+
+@media (max-width : 1500px){
+
+  .welcomeAdmin{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .divExpand{
+    margin-left: 50px;
+  }
+
+
+
+}
+
+
+
+
+@media (max-width : 1441px){
+
+  .TaskRefresh{
+    top : 25%;
+    right : 27%
+  }
+  
+  .ApplicationRefresh{
+    top : 29%;
+    right : 25%
+  }
+  
+  .AttendanceRefresh{
+    top : 23%;
+    right : 27%
+  }
+
+}
+
+@media (max-width : 1300px){
+
+  .welcomeAdmin{
+    height: auto;
+    width: auto;
+    /* margin: 2px; */
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .divExpand{
+    margin-left: 50px;
+  }
+  /* .menuButt{
+    margin-right: 30px;
+  } */
+
+  .currentTaskCard{
+    margin-left: 100px;
+  }
+  .menuButt{
+    margin-right: 30px;
+  }
+
+  
+  }
+  @media (max-width : 1200px){
+
+    .welcomeAdmin{
+      height: auto;
+      width: auto;
+      /* margin: 2px; */
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+    
+    .divExpand{
+      margin-left: 50px;
+    }
+    /* .menuButt{
+      margin-right: 30px;
+    } */
+  
+    .currentTaskCard{
+      margin-left: 100px;
+    }
+    .menuButt{
+      margin-right: 30px;
+    }
+  
+   
+    
+    }
+
+@media(max-width : 1100px){
+
+  /* .welcomeAdmin{
+    margin-right: 20px;
+    margin-left: 10px;
+  } */
+  .welcomeAdmin{
+    height: auto;
+    width: auto;
+    /* margin: 2px; */
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .divExpand{
+    margin-left: 50px;
+  }
+  /* .menuButt{
+    margin-right: 30px;
+  } */
+
+  .currentTaskCard{
+    margin-left: 100px;
+  }
+  .menuButt{
+    margin-right: 30px;
+  }
+
+
+}
+
+
+
+
+
+@media(max-width : 1025px) {
+
+  .welcomeAdmin{
+    height: auto;
+    width: auto;
+    /* margin: 2px; */
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .tables{
+    width: 100%;
+    /* margin: 5px; */
+    margin-right: 10px;
+  }
+  .TaskRefresh{
+    top : 25%;
+    right : 33%
+  }
+  
+  .ApplicationRefresh{
+    top : 29%;
+    right : 33%
+  }
+  
+  .AttendanceRefresh{
+    top : 23%;
+    right : 33%
+  }
+  .currentTaskCard{
+    margin-left: 100px;
+  }
+  .menuButt{
+    margin-right: 30px;
+  }
+
+}
+
+@media(max-width : 900px){
+
+  .welcomeAdmin{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .divExpand{
+    margin-left: 50px;
+  }
+  .menuButt{
+    margin-right: 30px;
+  }
+
+
+}
+
+
+
+@media (max-width : 769px){
+
+  .sidebar{
+    display: none;
+    z-index: 100px;
+  }
+  .sidebar.collapsed{
+    display: none;
+  }
+
+  .divExpand{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .Major{
+    display: block;
+  }
+  .flexContainer{
+    margin-top: 30px;
+    /* display: block; */
+    margin: 10px;
+  }
+
+.ineptLogo{
+  width: 220px;
+  height: 25px;
+  /* margin-left: 50px; */
+}
+
+.responsiveHeader{
+  /* display: block; */
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 30px;
+}
+.welcomeAdmin{
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
+.card{
+  margin: auto;
+  width: 200px;
+  height: 130px;
+}
+.currentTask{
+  margin-left: auto;
+  margin: 20px;
+  width: auto;
+  overflow: scroll;
+  
+}
+
+.menuButt{
+  margin-left: 15px;
+  margin-right: 240px;
+  
+}
+
+.card-title{
+  padding-top: 20px;
+}
+
+.sidebarMedia{
+
+  display: block;
+  left: 0 ;
+  top: 10%;
+  background-color: red; 
+  background-image: linear-gradient(0deg, rgb(26, 29, 29), rgb(88, 68, 173));
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  bottom: 0;
+  height: 100%;
+  border-radius: 25px;
+  position: fixed;
+  z-index: 100000;
+
+
+}
+.sidebar-header{
+  display: none;
+}
+.line{
+  display: none;
+}
+
+
+.userDropdown{
+  margin-top: 130px;
+  margin-left: 120px;
+}
+
+.tables{
+  width: 95%;
+  margin: 10px;
+}
+
+.date{
+  margin-left: 0;
+  margin: 0;
+}
+
+.dateDiv1{
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.dateDiv2{
+  margin-left: 0px;
+}
+
+.attendanceModal{
+  width: 350px;
+  height: 250px;
+}
+
+.mediaUserImage{
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.profileMajorDiv{
+  display: none;
+}
+
+.mediaProfileMajorDiv{
+  display: block;
+  /* margin-left: 25px; */
+  box-shadow: 5px 5px 10px 8px #888888;
+  width: 310px;
+  border-radius: 20px;
+  /* margin-bottom: 20px; */
+  margin: auto;
+
+}
+
+.profileItem{
+  margin: 5px;
+  margin-left: 25px;
+  
+}
+
+.profileContent{
+  margin-left: 5px;
+}
+
+.editProfileModal{
+  height: 650px;
+  width: auto;
+  overflow: scroll;
+  /* left: 50%; */
+  padding-left: 20px;
+}
+
+.TaskRefresh{
+  top : 25%;
+  right : 3%
+}
+
+.ApplicationRefresh{
+  top : 28%;
+  right : 3%
+}
+
+.AttendanceRefresh{
+  top : 24%;
+  right : 3%
+}
+  
+  
+  
+  }
+
+
+@media (max-width : 600px){
+
+  .welcomeAdmin{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .divExpand{
+    margin-left: 50px;
+  }
+
+  
+}
+
+@media (max-width : 500px){
+
+  .welcomeAdmin{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .divExpand{
+    margin-left: 50px;
+  }
+
+}
+
+
+
+@media (max-width: 426px){
+
+  /* @media (max-width : 375px) */
+ 
+  /* { */
+    
+    
+    .sidebar{
+    display: none;
+    z-index: 100px;
+  }
+  .sidebar.collapsed{
+    display: none;
+  }
+
+  .divExpand{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .Major{
+    display: block;
+  }
+  .flexContainer{
+    display: block;
+    margin: 0px;
+  }
+
+.ineptLogo{
+  width: 220px;
+  height: 25px;
+  /* margin-left: 50px; */
+}
+
+.responsiveHeader{
+  /* display: block; */
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 30px;
+}
+.welcomeAdmin{
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
+.card{
+  margin: auto;
+  width: 200px;
+  height: 130px;
+}
+.currentTask{
+  margin-left: auto;
+  margin: 20px;
+  width: auto;
+  overflow: scroll;
+  
+}
+
+.menuButt{
+  margin-left: 15px;
+  margin-right: 55px;
+  
+}
+
+.card-title{
+  padding-top: 20px;
+}
+
+.sidebarMedia{
+
+  display: block;
+  left: 0 ;
+  top: 10%;
+  background-color: red; 
+  background-image: linear-gradient(0deg, rgb(26, 29, 29), rgb(88, 68, 173));
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  border-radius: 25px;
+  position: fixed;
+  z-index: 100000;
+
+
+}
+.sidebar-header{
+  display: none;
+}
+.line{
+  display: none;
+}
+
+
+.userDropdown{
+  margin-top: 130px;
+  margin-left: 120px;
+}
+
+.tables{
+  width: 95%;
+  margin: 10px;
+}
+
+.date{
+  margin-left: 0;
+  margin: 0;
+}
+
+.dateDiv1{
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.dateDiv2{
+  margin-left: 0px;
+}
+
+.attendanceModal{
+  width: 350px;
+  height: 250px;
+}
+
+.mediaUserImage{
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.profileMajorDiv{
+  display: none;
+}
+
+.mediaProfileMajorDiv{
+  display: block;
+  /* margin-left: 25px; */
+  box-shadow: 5px 5px 10px 8px #888888;
+  width: 310px;
+  border-radius: 20px;
+  /* margin-bottom: 20px; */
+  margin: auto;
+
+}
+
+.profileItem{
+  margin: 5px;
+  margin-left: 25px;
+  
+}
+
+.profileContent{
+  margin-left: 5px;
+}
+
+.editProfileModal{
+  height: 650px;
+  width: auto;
+  overflow: scroll;
+  /* left: 50%; */
+  padding-left: 20px;
+}
+
+.TaskRefresh{
+  top : 25%;
+  right : 3%
+}
+
+.ApplicationRefresh{
+  top : 28%;
+  right : 3%
+}
+
+.AttendanceRefresh{
+  top : 24%;
+  right : 3%
+}
+.currentTaskCard{
+  margin-left: auto;
+  width: auto;
+  margin: 10px;
+}
+.viewDetailBtn{
+  margin-left: 100px;
+  color: black;
+}
+
+}
+
+/* .............................................................................................................  */
+/* ............................................................................................................. */
+/* ............................................................................................................. */
+
+
+
+
+
+@media (max-width : 376px){
+
+.menuButt{
+  margin-right: 30px;
+}
+
+}
+
+/* ............................................................................................................. */
+/* ............................................................................................................. */
+/* ............................................................................................................. */
+
+
+@media (max-width : 321px){
+
+  .menuButt{
+    margin-right: 7px;
+  }
+  
+  }
+
+

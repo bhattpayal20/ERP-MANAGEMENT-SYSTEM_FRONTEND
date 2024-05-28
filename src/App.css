@@ -1,0 +1,1055 @@
+body{
+  overflow: auto;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* body{
+  background-color: thistle;
+} */
+.sidebar{
+  position: fixed;
+  /* background-image: url("https://azouaoui-med.github.io/react-pro-sidebar/static/media/bg2.de0153c5.jpg");
+  background-size: cover;
+  opacity: 1; */
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, rgb(26, 29, 29), rgb(88, 68, 173));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* float: left; */
+  background-color: rgb(17, 25, 42);
+  /* height: 745px;
+  width: 20%; */
+  text-align: left;
+  /* overflow: scroll; */
+  margin-right: -17px;
+  margin-bottom: -17px;
+  /* position: absolute; */
+  /* inset: 0px; */
+
+  width: 20%;
+    /* min-width: 290px; */
+    color: rgba(255, 255, 255, 0.7);
+    /* position: relative; */
+    /* z-index: 7; */
+    height: 100%;
+    padding-bottom: 61px;
+
+}
+
+.sidebar:hover{
+  scrollbar-width: thin;
+  /* overflow-y: scroll; */
+  
+}
+
+
+/* .feature{
+  text-align: left;
+  color: rgb(170, 162, 162)  ;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+  text-decoration:none;
+  transition: background-color 0.2s;
+
+  /* background-color: black; */
+
+/* .feature:hover{
+  color: white;
+} */ 
+.sidebar-icon{
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.sidebar-items .item{
+  display: flex;
+  align-items: center;
+  padding: 16px 8px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+
+.sidebar-items .item:hover{
+  background-color: rgba(255 , 255 , 255 , 0.05);
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+.sidebar.collapsed .sidebar-icon {
+  margin-left: 0;
+  /* width: 100px; */
+}
+
+.sidebar.collapsed .sidebar-content , 
+.sidebar.collapsed .sidebar-text {
+  display:  none;
+}
+
+
+
+.logOut{
+  /* display: flex;
+  justify-content: center; */
+  display: inline-block;
+  
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.power{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.mainSection{
+  /* float: right; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 190px; */
+  
+}
+.welcome{
+  text-align: center;
+  
+}
+
+.card-title{
+  text-align: center;
+  color: rgb(249, 249, 250);
+}
+
+.num{
+  color: rgb(248, 245, 245);
+  text-align: center;
+}
+
+.card{
+  width: 250px;
+  height: 150px;
+  background-color: rgb(238, 232, 221);
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+  background-color: rgb(235, 12, 197); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(99, 8, 134), rgb(83, 28, 184));
+
+  
+}
+
+.flexContainer{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.img{
+  width: 100%;
+}
+.MainDiv{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  /* margin-left: 190px; */
+ 
+}
+.team{
+  width: 270px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(231, 229, 226);
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.HavingTeam{
+  display: flex;
+  justify-content: center;
+}
+
+.WorkingTeams{
+  text-align: center;
+  color: darkblue;
+}
+
+.AttendenceDiv{
+  /* float: right; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 190px; */
+
+}
+.AttendenceHead{
+  text-align: center;
+  color: darkblue;
+}
+.ApplicationPage{
+  /* float: right; */
+  width:100%;
+  height: 100%;
+  /* margin-left: 190px; */
+  
+
+}
+.ApplicationHead{
+/* margin-top: 80px; */
+  text-align: center;
+  color: darkblue;
+}
+
+.TaskManagerPage{
+  /* float: right; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 190px; */
+
+}
+.TaskManagerHead{
+  text-align: center;
+  color: darkblue;
+}
+.AdminImg{
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+border-radius: 100px;
+margin: 10px;
+
+display: inline-block;
+}
+
+.InvoiceMain{
+  /* float: right; */
+  width: 100%;
+  height: 100px;
+  /* margin-left: 190px; */
+
+}
+.InvoiceHead{
+  text-align: center;
+  color: darkblue;
+}
+.NotificationMain{
+  /* float: right; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 190px; */
+
+}
+.NotificationHead{
+  text-align: center;
+  color: darkblue;
+}
+
+.HolidayMain{
+  /* float: right; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 190px; */
+
+}
+.HolidayHead{
+  text-align: center;
+  color: darkblue;
+}
+
+.AdminDivMain{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.ApplicationTable{
+
+  position: absolute;
+  left: 400px;
+
+}
+
+
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+
+.AttendanceTable{
+  position: absolute;
+  left: 400px;
+
+}
+.heading{
+  text-align: center;
+  color: darkblue;
+}
+
+.holidayPage{
+  width:100%;
+  height: 100%;
+  /* margin-left: 190px; */
+  
+}
+
+.Buttons{
+  display: flex;
+  /* display: block; */
+}
+
+
+
+/* UserProfile CSS */
+.box{    
+  box-sizing: border-box;
+  width: 360px;
+  height: 600px;
+  border: 2px solid #3498db ;
+  box-shadow: -3px -3px 7px #ffffff73,
+              3px 3px 5px rgba(94,104,121,0.288);
+  border-radius: 10px;
+  background-color: black;
+  margin-top: 50px;
+  overflow: hidden;
+  transition: all .5s;
+  /* position: absolute; */
+  left: 10%;
+  top: 3%;
+}
+
+.userImage{
+  box-sizing: border-box;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0;
+  border: 5px solid #ee5d5d;
+  padding: 3px;
+  background-color: #fff;
+}
+/* 
+Editinput[type="text"],
+input[type="email"]{ */
+.EditInput{
+  display: block;
+  box-sizing: border-box;
+  background: none;
+  color: #3498db;
+  margin-bottom: 30px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #0082e6;
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+
+.EditInput{
+  margin-top: 25px;
+}
+
+.EditInput{
+  border-bottom: 2px solid #3498db;
+  border-bottom-right-radius: 20px;
+  color: #3498db;
+  transition: 0.2 ease;
+}
+
+.formButton{
+  border: 1px solid #3498db;
+  /* background-color: black; */
+  color: black;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+input[type="file"]{
+  display: none;
+}
+
+label{
+  box-sizing: border-box;
+  font-size: 20px;
+  /* background-color: black; */
+  color: black;
+  border-radius: 5px;
+  /* border: 1px solid #3498db; */
+  padding: 2px 15px;
+  transition: all 0.3s;
+}
+
+label:hover{
+  background-color: #fff;
+  color: black;
+}
+
+/* .box:hover{
+
+  border-radius: 5px;
+} */
+
+.box:hover img{
+  width: 100px;
+  height: 100px;
+}
+
+.EditPic{
+  cursor: pointer;
+  
+}
+
+.welcomeAdmin{
+color: white;
+height: 100px;
+width: auto;
+margin-top: 30px;
+background-color: rgb(8, 156, 241); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgb(12, 129, 224) , rgb(183, 26, 204));
+  border-radius: 20px;
+  margin-left: auto;
+
+}
+
+/* .AdminLogin{
+   right: 0px;
+   margin: 10px;
+   top: 0px;
+   position: fixed;
+   cursor: pointer;
+} */
+.AdminLogin-icon{
+  margin: 5px;
+  width: 2.5em;
+  height: 2.5em;
+}
+.AdminLogin-text{
+  margin: 5px;
+}
+
+.divExpand{
+  width: 75%;
+  padding-left: 250px;
+}
+.sidebar-heading{
+  display: flex;
+}
+
+.tables{
+  width: 100%;
+}
+
+.responsiveHeader{
+  display: flex;
+  display: none;
+  margin-top: 30px;
+}
+
+.mainChartsDiv{
+
+  height: auto;
+  width: auto;
+  /* text-align: center; */
+  /* margin-left: 190px; */
+}
+
+.chart1{
+  width: 80%;
+}
+.chart2{
+  width: 65%;
+}
+.chart3{
+  width: 55%;
+}
+.dropbtn {
+  /* background-color: #4CAF50; */
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content h5 {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content h5:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.generateInvoiceBtn{
+
+  left: 750px;
+  top: 76px;
+
+}
+
+.UploadFileBtn{
+
+  /* margin-left: 214px; */
+  margin-top: 6px;
+  /* margin-right: 100px; */
+
+}
+.welcomediv{
+  padding: 1.5rem 1.5rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+    box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+    background-image: linear-gradient( 
+45deg
+ , #21D4FD 0%, #B721FF 100%);
+    width: 100%;
+    height: 13vh;
+    border-radius: 16px;
+
+
+    align-items: baseline;
+    display: flex;
+}
+.head{
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 24px;
+    color: white;
+  font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.4285714286rem;
+}
+.mangeAct{
+  font-family: 'Rubik';
+    color: white;
+    margin-left: 21px;
+    margin-top: 0px;
+}
+.navbar{
+  width: 94%;
+    height: 51px;
+}
+.logout{
+  margin-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+.btnlogout{
+  background: #fff;
+  border-radius: 3px;
+  padding: 6px;}
+  .attLabel{
+    font-size: 14px;
+  }
+/* .dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+
+
+
+
+/* ......................................... Responsive CSS Styling .....................................  */
+/* ......................................... Responsive CSS Styling .....................................  */
+/* ......................................... Responsive CSS Styling .....................................  */
+
+
+
+@media (max-width : 1200px){
+
+
+  .generateInvoiceBtn{
+
+    left: 700px;
+    top: 85px;
+  
+  }
+
+
+  
+}
+
+@media (max-width : 1100px){
+
+  .generateInvoiceBtn{
+
+   margin-left: 100px;
+
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+@media (max-width : 1025px){
+
+.sidebar{
+  width: 27%;
+}
+.AdminDivMain{
+  width: 90%;
+}
+
+.welcomeAdmin{
+  margin-left: 60px;
+}
+.generateInvoiceBtn{
+
+  left: 500px;
+  top: 85px;
+
+}
+.tables{
+  margin-left: 70px;
+}
+.applicationRefresh{
+  right: 290px;
+}
+.invoiceRefresh{
+  
+  right : 290px;
+
+  
+}
+
+}
+
+
+@media (max-width : 900px){
+
+
+
+
+  
+}
+
+
+
+
+@media (max-width : 769px){
+  .sidebar{
+    display: none;
+    z-index: 100px;
+  }
+  .sidebar.collapsed{
+    display: none;
+  }
+
+
+  .divExpand{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .flexContainer{
+    display: flex;
+    margin: 0px;
+  }
+
+  .welcomeAdmin{
+    height: auto;
+    width: auto;
+    margin: 10px;
+  }
+  .card{
+    /* margin-left: 80px; */
+    margin: auto;
+    width: 200px;
+    height: 130px;
+  }
+
+  .card-title{
+    padding-top: 20px;
+  }
+
+  .responsiveHeader{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 180px;
+    
+  }
+
+  .sidebarMedia{
+
+    display: block;
+    left: 0 ;
+    top: 10%;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(0deg, rgb(26, 29, 29), rgb(88, 68, 173));
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    bottom: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 100000;
+  
+  
+  }
+  .sidebar-header{
+    display: none;
+  }
+  .line{
+    display: none;
+  }
+
+  .sidebar-heading{
+    display: none;
+  }
+  .AdminDivMain{
+    display: block;
+  }
+
+  .ineptLogo{
+    width: 210px;
+    height: 25px;
+    /* margin-top: 15px; */
+  }
+
+  .tables{
+    width: 100%;
+    margin: 10px
+  }
+
+  .mainChartsDiv{
+    margin-left: auto;
+  }
+  .generateInvoiceBtn{
+
+    left: 270px;
+    top: 56px;
+
+  }
+
+
+
+}
+
+@media (max-width : 700px){
+
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 140px;
+    
+  }
+  .card{
+    /* margin-left: 80px; */
+    margin: auto;
+    width: 200px;
+    height: 160px;
+    padding-bottom: 10px;
+    margin : 20px
+  }
+
+  .card-title{
+    padding-top: 20px;
+  }
+
+
+  
+}
+@media (max-width : 600px){
+
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 130px;
+    
+  }
+
+
+  
+}
+@media (max-width : 500px){
+
+
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 80px;
+    
+  }
+
+  
+}
+
+
+@media(max-width : 426px) {
+
+.AddHolidayBtn{
+
+  margin-top: 10px;
+
+
+}
+
+
+
+  .sidebar{
+    display: none;
+    z-index: 100px;
+  }
+  .sidebar.collapsed{
+    display: none;
+  }
+
+
+  .divExpand{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .flexContainer{
+    display: block;
+    margin: 0px;
+  }
+
+  .welcomeAdmin{
+    height: auto;
+    width: auto;
+    margin: 10px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+  }
+  .card{
+    /* margin-left: 80px; */
+    margin: auto;
+    width: 200px;
+    height: 130px;
+
+  }
+
+  .card-title{
+    padding-top: 20px;
+  }
+
+  .responsiveHeader{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 55px;
+    
+  }
+
+  .sidebarMedia{
+
+    display: block;
+    left: 0 ;
+    top: 10%;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(0deg, rgb(26, 29, 29), rgb(88, 68, 173));
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 100000;
+  
+  
+  }
+  .sidebar-header{
+    display: none;
+  }
+  .line{
+    display: none;
+  }
+
+  .sidebar-heading{
+    display: none;
+  }
+  .AdminDivMain{
+    display: block;
+  }
+
+  .ineptLogo{
+    width: 210px;
+    height: 25px;
+    /* margin-top: 15px; */
+  }
+
+  .tables{
+    width: 100%;
+    /* margin: 5px */
+  }
+
+  .mainChartsDiv{
+    margin-left: auto;
+  }
+
+  .generateInvoiceBtn{
+
+    left: 90px;
+    top: 56px;
+  
+  }
+
+.invoiceModal{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 500;
+    height: 500px;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 24;
+ 
+ 
+}
+.applicationRefresh{
+  right: 50px;
+}
+
+.invoiceRefresh{
+
+  right : 20px;
+
+}
+
+
+
+}
+
+
+@media (max-width : 376px){
+
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 20px;
+    
+  }
+
+
+}
+
+@media (max-width : 321px){
+  .menuButt{
+    margin-left: 15px;
+    margin-right: 5px;
+    
+  }
+  .flexContainer{
+    margin-left: 25px;
+  }
+ /* .welcomeAdmin{
+   font-size: 15px;
+ }
+ .welcomeSubHead{
+   font-size: 14px;
+ } */
+
+
+}
